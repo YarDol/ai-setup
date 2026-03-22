@@ -20,22 +20,22 @@ export function CodeBlock({ code, lang = "bash", filename }: CodeBlockProps) {
   return (
     <div className="rounded-lg border border-border overflow-hidden text-sm">
       {filename && (
-        <div className="flex items-center justify-between px-4 py-2 border-b border-border bg-secondary">
-          <span className="text-muted-foreground font-mono text-sm">
+        <div className="flex items-center justify-between px-3 sm:px-4 py-2 border-b border-border bg-secondary">
+          <span className="text-muted-foreground font-mono text-xs sm:text-sm truncate">
             {filename}
           </span>
-          <span className="text-muted-foreground text-sm uppercase tracking-wide">
+          <span className="text-muted-foreground text-xs sm:text-sm uppercase tracking-wide shrink-0 ml-2">
             {lang}
           </span>
         </div>
       )}
       <div className="relative group">
-        <pre className="p-4 overflow-x-auto bg-secondary/40 font-mono text-sm leading-relaxed">
+        <pre className="p-3 sm:p-4 overflow-x-auto bg-secondary/40 font-mono text-xs sm:text-sm leading-relaxed">
           <code>{code.trim()}</code>
         </pre>
         <button
           onClick={copy}
-          className="absolute top-2.5 right-2.5 px-2 py-1 rounded text-sm bg-card border border-border text-muted-foreground hover:text-foreground transition-all opacity-0 group-hover:opacity-100"
+          className="absolute top-2.5 right-2.5 px-2 py-1 rounded text-sm bg-card border border-border text-muted-foreground hover:text-foreground transition-all opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
         >
           {copied ? "Copied" : "Copy"}
         </button>

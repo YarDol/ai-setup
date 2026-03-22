@@ -22,7 +22,7 @@ export function SetupStep({
   const isLast = step === total;
 
   return (
-    <div className="flex gap-5">
+    <div className="flex gap-3 sm:gap-5">
       {/* Timeline */}
       <div className="flex flex-col items-center shrink-0">
         <div className="w-9 h-9 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold shrink-0 z-10">
@@ -32,8 +32,8 @@ export function SetupStep({
       </div>
 
       {/* Card */}
-      <div className={`flex-1 ${isLast ? "pb-0" : "pb-8"}`}>
-        <div className="border border-border rounded-xl p-5 bg-card">
+      <div className={`flex-1 min-w-0 ${isLast ? "pb-0" : "pb-8"}`}>
+        <div className="border border-border rounded-xl p-4 sm:p-5 bg-card">
           {/* Header */}
           <div className="flex items-start justify-between gap-3 mb-2">
             <h3 className="font-semibold text-base text-foreground leading-snug">
@@ -55,7 +55,7 @@ export function SetupStep({
 
           {/* What you get */}
           {gain && (
-            <div className="flex items-center gap-2 mb-4 text-sm">
+            <div className="flex items-start gap-2 mb-4 text-sm flex-wrap">
               <span className="text-muted-foreground/60 shrink-0">
                 You get:
               </span>

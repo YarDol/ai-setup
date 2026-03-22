@@ -7,7 +7,7 @@ const TOTAL = 9;
 
 export default function SetupPage() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
       <div className="mb-10">
         <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">
           Setup Guide
@@ -117,6 +117,16 @@ export default function SetupPage() {
           <CodeBlock
             code={`/plugin marketplace add obra/superpowers-marketplace\n/plugin install superpowers@superpowers-marketplace`}
           />
+          <p className="text-sm text-muted-foreground mt-2">
+            Run these two commands separately inside Claude Code, not in your terminal. You may
+            see schema validation warnings from the official marketplace — these are harmless and
+            the install succeeds regardless.
+          </p>
+          <p className="text-sm text-muted-foreground mt-1">
+            Verify: type{" "}
+            <code className="bg-secondary px-1 rounded">/superpowers:using-superpowers</code> —
+            you should see the skill list load.
+          </p>
         </SetupStep>
 
         <SetupStep
