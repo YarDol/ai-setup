@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm *)",
+      "Bash(bun *)",
+      "Bash(bunx *)",
       "Bash(npx *)",
       "Bash(git status)",
       "Bash(git diff *)",

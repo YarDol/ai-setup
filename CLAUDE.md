@@ -5,10 +5,10 @@ A Next.js documentation website with our team's recommended Claude Code setup.
 The guide lives at `/app` — plain TSX, no MDX.
 
 ## Commands
-- Dev server: `npm run dev` (localhost:3000)
-- Build: `npm run build`
-- Type check: `npx tsc --noEmit`
-- Lint: `npm run lint`
+- Dev server: `bun dev` (localhost:3000)
+- Build: `bun run build`
+- Type check: `bunx tsc --noEmit`
+- Lint: `bun run lint`
 
 ## Stack
 - Next.js 15 App Router + TypeScript

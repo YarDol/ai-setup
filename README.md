@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Claude Code — Best Team Setup
 
-## Getting Started
+Curated Claude Code setup guide for development teams. Built as a Next.js documentation site.
 
-First, run the development server:
+**Live guide** → open `bun dev` and visit [localhost:3000](http://localhost:3000)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Pages
+
+| Page | Content |
+|------|---------|
+| `/` | Overview and tool stack at a glance |
+| `/setup` | Step-by-step setup guide (start here) |
+| `/tools` | Full tool reference table with install commands |
+| `/platforms` | CLAUDE.md templates for Android, iOS, JS, Monorepo |
+| `/security` | Settings, secrets handling, permission modes |
+
+## Recommended tool stack
+
+| Tool | Type | Purpose |
+|------|------|---------|
+| SuperClaude | Commands | 31 structured slash commands |
+| everything-claude-code | Infrastructure | Agents, hooks, rules, memory |
+| Context7 | MCP | Up-to-date library docs |
+| GitHub MCP | MCP | Issues, PRs, code search |
+| Figma MCP | MCP | Read designs into Claude |
+| Superpowers | Plugin | TDD, debugging, planning skills |
+| claude-mem | Plugin | Persistent session memory |
+| BMAD Method | Agents | Agile dev with specialized agents |
+
+## This repo
+
+```
+.mcp.json          — MCPs configured: context7 + github + figma
+.env.example       — Token env vars reference (copy to .env.local)
+.claude/
+  settings.json    — Safety permissions: deny .env*, rm -rf, pipe-to-shell
+  skills/
+    frontend-design/ — Impeccable skill (pbakaus/impeccable) for UI quality
+CLAUDE.md          — Project instructions for Claude Code
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Dev
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+bun dev          # localhost:3000
+bun run build    # production build
+bun run lint     # eslint
+bunx tsc --noEmit # type check
+```
