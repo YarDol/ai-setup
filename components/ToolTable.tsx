@@ -23,9 +23,9 @@ export const tools: Tool[] = [
     name: "SuperClaude",
     author: "NomenAK",
     category: "Commands",
-    what: "31 structured slash commands: /sc:implement, /sc:analyze, /sc:troubleshoot, /sc:workflow, /sc:pm, /sc:git, /sc:test, /sc:index-repo, and more.",
+    what: "31 structured slash commands: /sc:implement, /sc:analyze, /sc:troubleshoot, /sc:workflow, /sc:pm, /sc:git, /sc:test, /sc:index-repo, /sc:research (deep web search), and more.",
     install: "npx superclaude@latest install",
-    when: "Daily — structured implementation, analysis, debugging",
+    when: "Daily — structured implementation, analysis, debugging, web research",
     link: "https://github.com/NomenAK/SuperClaude",
   },
   {
@@ -63,6 +63,15 @@ export const tools: Tool[] = [
     install: "Add to .mcp.json (see this repo)",
     when: "Frontend work — translating designs to code",
     link: "https://github.com/sonnylazuardi/figma-mcp",
+  },
+  {
+    name: "Playwright MCP",
+    author: "Microsoft",
+    category: "MCP",
+    what: "Browser automation via accessibility tree — no vision model needed. Navigate, click, fill forms, take screenshots, run end-to-end tests in plain English. Self-QA your running app from Claude.",
+    install: "claude mcp add playwright npx @playwright/mcp@latest",
+    when: "QA, E2E testing, web scraping, form automation",
+    link: "https://github.com/microsoft/playwright-mcp",
   },
   {
     name: "Serena",

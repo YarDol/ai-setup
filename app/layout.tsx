@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Claude Code — Best Team Setup",
+  title: "Claude Code — Team Setup",
   description:
     "Curated Claude Code setup guide: recommended tools, MCPs, skills, and configurations for development teams.",
 };
