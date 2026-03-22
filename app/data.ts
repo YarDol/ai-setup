@@ -80,14 +80,21 @@ export const pages = [
       "VS Code, Cursor, Windsurf, WebStorm, Zed — connect Claude Code + use their AI.",
   },
   {
-    href: "/platforms",
+    href: "/pr-review",
     step: "06",
+    title: "PR Review",
+    description:
+      "AI-powered PR review — free and near-free setups with CodeRabbit, Qodo, Kilo Code.",
+  },
+  {
+    href: "/platforms",
+    step: "07",
     title: "Platforms",
     description: "CLAUDE.md templates for Android, iOS, JS, monorepos.",
   },
   {
     href: "/security",
-    step: "07",
+    step: "08",
     title: "Security",
     description: "Permissions, secrets handling",
   },

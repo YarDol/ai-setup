@@ -10,6 +10,7 @@ const links = [
   { href: "/tools", label: "Tools" },
   { href: "/models", label: "Models" },
   { href: "/ides", label: "IDEs" },
+  { href: "/pr-review", label: "PR Review" },
   { href: "/platforms", label: "Platforms" },
   { href: "/security", label: "Security" },
 ];
