@@ -45,7 +45,7 @@ export const ides: IDE[] = [
   {
     id: "cursor",
     name: "Cursor",
-    tagline: "Best autocomplete — but watch the cost",
+    tagline: "All-in-one AI IDE",
     price: "Free tier* · Pro $20/month",
     freeTier:
       "Free tier severely restricted after Jan 2026 — fast model requests run out in a day of normal use. Effectively requires Pro ($20/month) for daily work.",
@@ -99,7 +99,7 @@ export const ides: IDE[] = [
   {
     id: "webstorm",
     name: "WebStorm",
-    tagline: "Best JS/TS IDE — free for personal use",
+    tagline: "Best JS/TS IDE",
     price: "$7.90/month commercial + AI costs",
     freeTier:
       "Install the Codeium plugin for free unlimited autocomplete — better than JetBrains AI on the free tier.",
